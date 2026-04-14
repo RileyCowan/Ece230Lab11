@@ -12,14 +12,14 @@ module ripple(
     );
 
     tff stage2(
-    .Clock(clk),
+    .Clock(Q0),
     .reset(reset),
     .T(1'b1),
     .Q(Q1)
     );    
 
     tff stage3(
-    .Clock(clk),
+    .Clock(Q1),
     .reset(reset),
     .T(1'b1),
     .Q(Q2)
